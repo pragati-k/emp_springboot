@@ -27,7 +27,7 @@ pipeline {
         }
         stage('Packaging') {
             steps {
-                bat 'mvn -f LibraryManagement_springboot/LibraryManagement/pom.xml package'
+                bat 'mvn -f pom.xml package'
                 echo 'Packageing..'
             }
         }        
